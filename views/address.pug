@@ -15,4 +15,14 @@ block content
 	div
 		span transctions
 		each transaction in transactions
-			div= `hash: ${transaction.hash} ${transaction.from} -> ${transaction.to} amount: ${transaction.amount}`
+			div 
+				span hash: 
+				a(href=`/transaction/${transaction.hash}`)
+					= transaction.hash
+				span 
+				a(href=`/address/${transaction.from}`)
+					= transaction.from
+				span  -> 
+				a(href=`/address/${transaction.to}`)
+					= transaction.to
+				span= ` amount: ${transaction.amount}`

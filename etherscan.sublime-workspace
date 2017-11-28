@@ -35,6 +35,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 1264,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "routes/address.js",
+			"settings":
+			{
+				"buffer_size": 503,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/address.pug",
+			"settings":
+			{
+				"buffer_size": 403,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -92,10 +128,16 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Clark/Node/etherscan"
+		"/C/Clark/Node/etherscan",
+		"/C/Clark/Node/etherscan/routes",
+		"/C/Clark/Node/etherscan/views"
 	],
 	"file_history":
 	[
+		"/C/Clark/Node/etherscan/.gitignore",
+		"/C/Clark/Node/etherscan/routes/users.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/routes/index.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/routes/users.js",
 		"/C/Users/nhalvorsen/Downloads/email-alert2.html",
 		"/C/Clark/Node/etherscan/app.js",
 		"/C/Clark/Node/express-locallibrary-tutorial/models/book.js",
@@ -180,10 +222,8 @@
 		"/C/Program Files/RSSBus/RSSBus Server/data/as2connector/profiles/VEN100/Outgoing/VEN100_20171009033744_2110350d83a-2411-4a37-aa68-ba8306c8d43f.edi",
 		"/C/Program Files/RSSBus/RSSBus Server/data/as2connector/profiles/VEN100/Outgoing/VEN100_20171009045419_2110e74ac5c-2e39-4a44-98ca-b1a9bf1e0485.edi",
 		"/C/Clark/Node/express-locallibrary-tutorial/bin/www",
-		"/C/Clark/Node/express-locallibrary-tutorial/routes/users.js",
 		"/C/Users/nhalvorsen/Documents/Visual Studio 2015/Projects/RabbitMQTest/.gitignore",
 		"/C/Users/nhalvorsen/Documents/Visual Studio 2015/Projects/RabbitMQTest/ - Copy.gitignore",
-		"/C/Clark/Node/express-locallibrary-tutorial/routes/index.js",
 		"/C/Clark/Node/express-locallibrary-tutorial/views/layout.pug",
 		"/C/Clark/Node/express-locallibrary-tutorial/views/index.pug",
 		"/C/Clark/Node/express-locallibrary-tutorial/views/error.pug",
@@ -221,9 +261,7 @@
 		"/C/Users/nhalvorsen/vimfiles/bundle/omnisharp-vim/omnisharp-roslyn/scripts/cake-bootstrap.ps1",
 		"/C/Users/nhalvorsen/vimfiles/bundle/omnisharp-vim/omnisharp-roslyn/build.ps1",
 		"//corp-ocr-01/webroot/daily_Ap_Inbox_status_email.cfm",
-		"//corp-ocr-01/webroot/check_not_recently_seen_vendors.cfm",
-		"//corp-ocr-01/webroot/check_plunging_vendors.cfm",
-		"//s112.files.logistics-auto-verify.webstaurantstore.com/Websites/logistics-auto-verify.webstaurantstore.com/html/Application.cfc"
+		"//corp-ocr-01/webroot/check_not_recently_seen_vendors.cfm"
 	],
 	"find":
 	{
@@ -258,8 +296,121 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1264,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								754,
+								754
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes/address.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								362,
+								362
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/address.pug",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								389
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/Shell Script (Git).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -311,6 +462,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"app.js",
+				"app.js"
+			],
+			[
+				"routesure",
+				"routes\\users.js"
+			],
 			[
 				"fileinvoice",
 				"fileInvoices.cfm"
@@ -667,8 +826,8 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 150.0,
+	"side_bar_visible": true,
+	"side_bar_width": 216.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

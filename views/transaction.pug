@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1 Transaction
+	p you are viewing transaction #{transaction}
+	
+	div= `Hash: ${transaction}`
+	div= `Status: ${status}`
+	div= `Block: ${block}`
+	div= `Time stamp: ${timestamp}`
+	div= `From: ${fromAddress}`
+	div= `To: ${toAddress}`
+	div= `Amount: ${amount}`
+
+
+	
