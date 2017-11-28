@@ -1,12 +1,11 @@
 var express = require('express');
-var ethHelper = require('../services/ethHelper');
 var router = express.Router();
 
-router.get('/:transaction', function(req, res, next) {
+var transactionController = require('../controllers/transactionController')
 
-var testTransactionData = ethHelper.getTransactionData(req.params.transaction);
 
-  res.render('transaction', { transaction: testTransactionData });
-});
+
+router.get('/:transaction', transactionController.index);
+
 
 module.exports = router;
