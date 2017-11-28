@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1 Address
+	p you are viewing address #{address}
+	p eth balance: #{ethBalance} ($#{ethUsdEquivalent} USD equivalent)
+
+	br
+	div
+		span tokens
+		each item in tokens
+			div= `${item.amount}x ${item.name}`
+
+	br
+	div
+		span transctions
+		each transaction in transactions
+			div= `hash: ${transaction.hash} ${transaction.from} -> ${transaction.to} amount: ${transaction.amount}`

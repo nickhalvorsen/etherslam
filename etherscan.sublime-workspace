@@ -1,0 +1,676 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"awesome",
+				"awesome_instance"
+			],
+			[
+				"han",
+				"handleError"
+			],
+			[
+				"awe",
+				"awesome_instance"
+			],
+			[
+				"lkjt",
+				";lkjt\tcfmail"
+			],
+			[
+				"dropshi",
+				"dropshipPOs"
+			],
+			[
+				"type",
+				"dbtype=\"query\"\tdbtype"
+			],
+			[
+				"purchase",
+				"purchase_order_id"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package contol remove",
+				"Package Control: Remove Channel"
+			],
+			[
+				"package control enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"packag",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 111.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Clark/Node/etherscan"
+	],
+	"file_history":
+	[
+		"/C/Users/nhalvorsen/Downloads/email-alert2.html",
+		"/C/Clark/Node/etherscan/app.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/models/book.js",
+		"/C/Users/nhalvorsen/Downloads/email-alert.html",
+		"//corp-ocr-01/webroot/fileInvoices.cfm",
+		"/C/Clark/APInbox/fileInvoices.cfm",
+		"/C/Clark/Node/express-locallibrary-tutorial/models/genre.js",
+		"//corp-ocr-01/webroot/WEB-INF/railo/logs/fileinvoices_errors.log",
+		"//it-websrv-01/ap-inbox/logs/APMoverLog.txt",
+		"/C/Clark/APInbox/addtoinvoicetracking.cfm",
+		"/C/Users/nhalvorsen/Downloads/5x5_intermediate_v0.3/InvoiceListLine.cshtml",
+		"/C/ApplicationLogs/APWorkflow/APWorkflow.log.2017-09-08",
+		"/C/ApplicationLogs/APWorkflow/APWorkflow.log.2017-11-09",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_19_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_19_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_19_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_18_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_18_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_18_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_17_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_17_24.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_17_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_16_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_16_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_16_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_15_44.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_21_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_21_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_21_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_22_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_22_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_22_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_14_10.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_14_24.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_14_43.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_15_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_15_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_20_3.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_20_23.txt",
+		"//corp-filesrv-01/AP Inbox/FilesToProcess/Logs/2017/7/14_20_43.txt",
+		"/C/Clark/APWorkflow/APWorkflow/Views/_Layout.cshtml",
+		"//logistics-auto-verify-files02.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/vendor_switch.cfm",
+		"//logistics-auto-verify-files01.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/process.cfm",
+		"//logistics-auto-verify-files02.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/process.cfm",
+		"//logistics-auto-verify-files01.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/Application.cfc",
+		"//logistics-auto-verify-files01.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/test3.cfm",
+		"//logistics-auto-verify-files01.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/test2.cfm",
+		"//logistics-auto-verify-files01.prod1.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/test.cfm",
+		"/C/Clark/APInbox/application.cfc",
+		"/C/Clark/APInbox/object/verify.cfc",
+		"/C/Clark/APInbox/invoice_switch_new.cfm",
+		"//ids-web-01/EdiWebApplications/EDI855Consumer/Web.config",
+		"/C/Clark/APWorkflow/APWorkflow/APWorkflow.csproj",
+		"/C/Clark/Forum/Forum.Db/album/Tables/PhotoAlbum.sql",
+		"/C/Clark/Forum/Forum.Db/album/Tables/Photo.sql",
+		"/C/Clark/Forum/Forum.Db/Scripts/MigrateFromClarkForum.sql",
+		"/C/Clark/Forum/Forum.Db/endUser/Tables/EndUser.sql",
+		"/C/Clark/Forum/Forum.Db/endUser/Tables/TopicRead.sql",
+		"//corp-filesrv-01/AP Inbox/Test/KIT500 8052080382 PO 750338.pdf.txt",
+		"/C/Users/nhalvorsen/Desktop/temp.json",
+		"//ids-dev-04/EdiWebApplications/Clark.EDI.AdminPortal/Areas/Reporting/Views/CustomShipmentStatusMessage/AssignShortShipmentStatusMessage.cshtml",
+		"//ids-web-qa01/EdiWebApplications/EDI855Consumer/Web.config",
+		"//ids-web-qa01/EdiWebApplications/Clark.EDI.AdminPortal/Web.config",
+		"//ids-web-qa01/EdiWebApplications/EDI810Consumer/Web.config",
+		"/C/Clark/APInbox/verify.cfm",
+		"/C/Clark/APWorkflow/.gitignore",
+		"/C/Clark/APInbox/unreadable_tosplit.cfm",
+		"/C/Clark/APInbox/object/ManageVendorSwitch.cfc",
+		"//it-websrv-01/ap-inbox/src/main.php",
+		"/C/Clark/APInbox/object/verifyDAO.cfc",
+		"//c05-dev-iis01.cp.clarkinc.io/W/websites/apworkflow.dev.clarkinc.biz/html/Web.config",
+		"/C/Clark/APWorkflow/APWorkflow/Web.config",
+		"//ids-dev-04/EdiWebApplications/Clark.EDI.AdminPortal/Web.config",
+		"/C/Clark/APInbox/check_plunging_vendors.cfm",
+		"/C/Clark/Node/express-locallibrary-tutorial/app.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/models/bookInstance.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/models/author.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/populatedb.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/app_with_examples.js",
+		"/C/Program Files/RSSBus/RSSBus Server/data/as2connector/profiles/VEN100/Outgoing/VEN100_20171009045616_211f178a7f9-9342-47e2-80aa-e952a664c9ad.edi",
+		"/C/Program Files/RSSBus/RSSBus Server/data/as2connector/profiles/VEN100/Outgoing/VEN100_20171009045302_211129b2f09-572e-45d5-9aac-52dc745723ac.edi",
+		"/C/Program Files/RSSBus/RSSBus Server/data/as2connector/profiles/VEN100/Outgoing/VEN100_20171009033744_2110350d83a-2411-4a37-aa68-ba8306c8d43f.edi",
+		"/C/Program Files/RSSBus/RSSBus Server/data/as2connector/profiles/VEN100/Outgoing/VEN100_20171009045419_2110e74ac5c-2e39-4a44-98ca-b1a9bf1e0485.edi",
+		"/C/Clark/Node/express-locallibrary-tutorial/bin/www",
+		"/C/Clark/Node/express-locallibrary-tutorial/routes/users.js",
+		"/C/Users/nhalvorsen/Documents/Visual Studio 2015/Projects/RabbitMQTest/.gitignore",
+		"/C/Users/nhalvorsen/Documents/Visual Studio 2015/Projects/RabbitMQTest/ - Copy.gitignore",
+		"/C/Clark/Node/express-locallibrary-tutorial/routes/index.js",
+		"/C/Clark/Node/express-locallibrary-tutorial/views/layout.pug",
+		"/C/Clark/Node/express-locallibrary-tutorial/views/index.pug",
+		"/C/Clark/Node/express-locallibrary-tutorial/views/error.pug",
+		"/C/Clark/Node/express-locallibrary-tutorial/package.json",
+		"/C/Clark/Node/express-locallibrary-tutorial/start-server.bat",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Areas/Reporting/Views/Shared/DisplayTemplates/Type855Item.cshtml",
+		"/C/Clark/LinkMan/square.js",
+		"/C/Clark/LinkMan/wiki.js",
+		"/C/Clark/LinkMan/app.js",
+		"/C/Clark/LinkMan/package.json",
+		"/C/Clark/LinkMan/myapp/app.js",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Web.Debug.Nhalvorsen.config",
+		"/C/Clark/LinkMan/linkman/app.js",
+		"/C/Clark/LinkMan/linkman/bin/www",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Areas/Reporting/Controllers/PurchaseOrderViewerController.cs",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Web.Debug.Ngeisinger.config",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Web.Debug.sgargano.config",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Web.Debug.nmarshall.config",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Web.config",
+		"/C/Source/ClarkEDI/ClarkEDI/Main/Source/EDI.Solution/Clark.EDI.AdministrationPortal/Clark.EDI.AdministrationPortal.csproj",
+		"/C/Users/nhalvorsen/Downloads/Report855 9_27_2017 12_00_00 AM-10_4_2017 12_00_00 AM.csv",
+		"/C/Users/nhalvorsen/EDI/855 from prod/SAC-TEST special charges.edi",
+		"//corp-ocr-01/webroot/open.cfm",
+		"/C/Users/nhalvorsen/.vscode/extensions/jrtools.mariana-1.0.6/themes/Mariana (Sublime)-color-theme.json",
+		"/C/Clark/APInbox/verify_test.cfm",
+		"/C/Clark/APInbox/daily_Ap_Inbox_status_email.cfm",
+		"/C/Clark/APInbox/check_not_recently_seen_vendors.cfm",
+		"/C/Users/nhalvorsen/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"//lunch-files01.prod2.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/process.cfm",
+		"//lunch-files01.prod2.webstaurantstore.com.backends.tech/Websites/logistics-auto-verify.webstaurantstore.com/html/ocr_test.cfm",
+		"//corp-ocr-01/webroot/invoice_switch_new.cfm",
+		"//corp-ocr-01/webroot/object/verify.cfc",
+		"/C/Clark/APInbox/testfile.cfm",
+		"/C/Users/nhalvorsen/vimfiles/bundle/omnisharp-vim/omnisharp-roslyn/build.cake",
+		"/C/Users/nhalvorsen/vimfiles/bundle/omnisharp-vim/omnisharp-roslyn/scripts/cake-bootstrap.ps1",
+		"/C/Users/nhalvorsen/vimfiles/bundle/omnisharp-vim/omnisharp-roslyn/build.ps1",
+		"//corp-ocr-01/webroot/daily_Ap_Inbox_status_email.cfm",
+		"//corp-ocr-01/webroot/check_not_recently_seen_vendors.cfm",
+		"//corp-ocr-01/webroot/check_plunging_vendors.cfm",
+		"//s112.files.logistics-auto-verify.webstaurantstore.com/Websites/logistics-auto-verify.webstaurantstore.com/html/Application.cfc"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "etherscan.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"fileinvoice",
+				"fileInvoices.cfm"
+			],
+			[
+				"addto",
+				"addtoinvoicetracking.cfm"
+			],
+			[
+				"invoice_switch_new.cfm",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"verify.cfm",
+				"verify.cfm"
+			],
+			[
+				"vendo",
+				"object\\ManageVendorSwitch.cfc"
+			],
+			[
+				"dao",
+				"object\\verifyDAO.cfc"
+			],
+			[
+				"verify.c",
+				"verify.cfm"
+			],
+			[
+				"verify.cfc",
+				"object\\verify.cfc"
+			],
+			[
+				"applic",
+				"application.cfc"
+			],
+			[
+				"plung",
+				"check_plunging_vendors.cfm"
+			],
+			[
+				"application",
+				"application.cfc"
+			],
+			[
+				"verify_test",
+				"verify_test.cfm"
+			],
+			[
+				"testfile",
+				"testfile.cfm"
+			],
+			[
+				"daily",
+				"daily_Ap_Inbox_status_email.cfm"
+			],
+			[
+				"plunging",
+				"check_plunging_vendors.cfm"
+			],
+			[
+				"applica",
+				"application.cfc"
+			],
+			[
+				"slack.cf",
+				"object/Slack.cfc"
+			],
+			[
+				"test",
+				"testfile.cfm"
+			],
+			[
+				"application.cfc",
+				"application.cfc"
+			],
+			[
+				"invoice_switch_new",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"verifydao",
+				"object/verifyDAO.cfc"
+			],
+			[
+				"invoicesw",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"invoice_switch",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"ocr_test",
+				"ocr_test.cfm"
+			],
+			[
+				"dailyemail",
+				"daily_Ap_Inbox_status_email.cfm"
+			],
+			[
+				"errorhand",
+				"object/errorHandler.cfc"
+			],
+			[
+				"invoice_swi",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"dao.cf",
+				"object/verifyDAO.cfc"
+			],
+			[
+				"verify_test.cfm",
+				"verify_test.cfm"
+			],
+			[
+				"web.conf",
+				"//corp-ocr-01/webroot/web.config"
+			],
+			[
+				"clauth.cfc",
+				"object/Clauth.cfc"
+			],
+			[
+				"apinbox",
+				"daily_Ap_Inbox_status_email.cfm"
+			],
+			[
+				"invoice",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"verify_new",
+				"verify_new.cfm"
+			],
+			[
+				"app",
+				"application.cfc"
+			],
+			[
+				"testfi",
+				"testfile.cfm"
+			],
+			[
+				"invoice_s",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"missinginvoiceinfo",
+				"missingInvoiceInfo.cfm"
+			],
+			[
+				"report",
+				"object/reports.cfc"
+			],
+			[
+				"vendor",
+				"vendorStatistics.cfm"
+			],
+			[
+				"verifydao.",
+				"object/verifyDAO.cfc"
+			],
+			[
+				"security",
+				"object/securitySettingRemover.cfc"
+			],
+			[
+				"invoice_",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"imagme",
+				"imagemagick_test.cfm"
+			],
+			[
+				"",
+				"application.cfc"
+			],
+			[
+				"home.cfm",
+				"home.cfm"
+			],
+			[
+				"verifydao.cf",
+				"object/verifyDAO.cfc"
+			],
+			[
+				"autoverify",
+				"autoverifyStatistics.cfm"
+			],
+			[
+				"verifycfc",
+				"object/verify.cfc"
+			],
+			[
+				"home.j",
+				"js/home.js"
+			],
+			[
+				"verify_new.cfm",
+				"verify_new.cfm"
+			],
+			[
+				"reports.cfc",
+				"object/reports.cfc"
+			],
+			[
+				"objectreport",
+				"object/reports.cfc"
+			],
+			[
+				"unreadablescan",
+				"UnreadableScan.cfm"
+			],
+			[
+				"invoice_sw",
+				"invoice_switch_new.cfm"
+			],
+			[
+				"slack.cfc",
+				"object/Slack.cfc"
+			],
+			[
+				"slack",
+				"object/Slack.cfc"
+			],
+			[
+				"vendor_switch",
+				"vendor_switch.cfm"
+			],
+			[
+				"application.c",
+				"Application.cfc"
+			],
+			[
+				"process.cfm",
+				"process.cfm"
+			],
+			[
+				"grab",
+				"grab_file_for_testing_csrmail.cfm"
+			],
+			[
+				"sitefooter.cfm",
+				"template/site2012/footer.cfm"
+			],
+			[
+				"newwebadminlayout.cfm",
+				"newwebadmin/layout.cfm"
+			],
+			[
+				"emailgo.cfm",
+				"emailgo.cfm"
+			],
+			[
+				"templatesite2012header.cfm",
+				"template/site2012/header.cfm"
+			],
+			[
+				"location.cfc",
+				"Object/Location.cfc"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"logisti",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"test",
+				"/C/Users/nhalvorsen/test.sublime-project"
+			],
+			[
+				"logistic",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"ap inbox",
+				"/C/Users/nhalvorsen/AP Inbox/AP Inbox.sublime-project"
+			],
+			[
+				"logi",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"ap inbo",
+				"/C/Users/nhalvorsen/AP Inbox/AP Inbox.sublime-project"
+			],
+			[
+				"logist",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"logistics",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"logistis",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"logistics a",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"piwik",
+				"/C/Users/nhalvorsen/Piwik.sublime-project"
+			],
+			[
+				"auto ver",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"logis",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"logistics au",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			],
+			[
+				"logistics auto v",
+				"/C/Users/nhalvorsen/Logistics Auto Verify System/Logistics Auto Verify System.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 588.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
