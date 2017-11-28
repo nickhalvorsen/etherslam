@@ -2,15 +2,19 @@ extends layout
 
 block content
 	h1 Transaction
-	p you are viewing transaction #{transaction}
+	p you are viewing transaction #{transaction.hash}
 	
-	div= `Hash: ${transaction}`
-	div= `Status: ${status}`
-	div= `Block: ${block}`
-	div= `Time stamp: ${timestamp}`
-	div= `From: ${fromAddress}`
-	div= `To: ${toAddress}`
-	div= `Amount: ${amount}`
+	div Hash: #{transaction.hash}
+	div Status: #{transaction.status}
+	div Block: #{transaction.block}
+	div Time stamp: #{transaction.timestamp}
+	div From: 
+		a(href=`/address/${transaction.fromAddress}`)
+			= transaction.fromAddress
+	div To: 
+		a(href=`/address/${transaction.toAddress}`)
+			= transaction.toAddress
+	div Amount: #{transaction.amount}
 
 
 	

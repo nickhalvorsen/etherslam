@@ -3,15 +3,17 @@ var router = express.Router();
 
 router.get('/:transaction', function(req, res, next) {
 
-var testStatus = 'success';
-var testBlock = '414242';
-var testTimeStamp = '04:30 44/33/22';
-var testFromAddress = '0x34097834891';
-var testToAddress = '0x23948273948s';
-var testAmount = '39.33';
+var testTransactionData = {
+	hash: req.params.transaction
+	, status: 'success'
+	, block: '414232'
+	, testTimeStamp: '04:30 44/33/22'
+	, fromAddress: '0x320478962039486723423435566'
+	, toAddress: '0x039987098d70987394872395873'
+	, amount: '30.44'
+}
 
-  res.render('transaction', { transaction: req.params.transaction, status: testStatus, block: testBlock, timeStamp: testTimeStamp
-  , fromAddress: testFromAddress, toAddress: testToAddress, amount: testAmount });
+  res.render('transaction', { transaction: testTransactionData });
 });
 
 module.exports = router;

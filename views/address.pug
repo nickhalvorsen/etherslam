@@ -2,19 +2,19 @@ extends layout
 
 block content
 	h1 Address
-	p you are viewing address #{address}
-	p eth balance: #{ethBalance} ($#{ethUsdEquivalent} USD equivalent)
+	p you are viewing address #{address.address}
+	p eth balance: #{address.ethBalance} ($#{address.ethBalanceUsdEquivalent} USD equivalent)
 
 	br
 	div
 		span tokens
-		each item in tokens
-			div= `${item.amount}x ${item.name}`
+		each item in address.tokens
+			div #{item.amount}x #{item.name}
 
 	br
 	div
 		span transctions
-		each transaction in transactions
+		each transaction in address.recentTransactions
 			div 
 				span hash: 
 				a(href=`/transaction/${transaction.hash}`)
