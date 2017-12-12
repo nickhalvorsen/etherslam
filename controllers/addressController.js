@@ -1,8 +1,7 @@
 var ethHelper = require('../services/ethHelper');
 
-
-exports.index = function(req, res) {
-    var addressData = ethHelper.getAddressData(req.params.address);
+exports.index = async function(req, res) {
+    var addressData = await ethHelper.getAddressData(req.params.address);
   	res.render('address', { address: addressData });
 };
 

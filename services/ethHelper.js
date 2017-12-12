@@ -2,24 +2,16 @@ var Web3 = require('web3');
 var web3 = new Web3(Web3.givenProvider || "http://127.0.0.1:18545");
 
 
-
 module.exports = {
-    getAddressData: function (address) {
+    getAddressData: async function (address) {
         
-
-        // todo: use promise data as return value of this function
-        // or otherwise get promise data onto the view
-        var balancePromise = web3.eth.getBalance(address);
-        var allPromises = Promise.all([balancePromise]);
-        allPromises.then(function(data) {
-            console.log(data); 
-        });
+        var balance = await web3.eth.getBalance(address);
 
         return {
 		address: address
 		, ethBalance: balance
-		, ethBalanceUsdEquivalent: 600.31
-		, ethUsdPrice: 300.41
+		, ethBalanceUsdEquivalent: 999
+		, ethUsdPrice: 999
 		, tokens: [
 			{name: "token1", amount: 222}
 			, {name: "token2", amount: 444}
