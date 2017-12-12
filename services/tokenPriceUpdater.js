@@ -1,27 +1,47 @@
 global.fetch = require('node-fetch');
-const cc = require('cryptocompare');
+const cryptocompare = require('cryptocompare');
 const tokenPriceDataService = require('./tokenPriceDataService');
 
 module.exports = {
-    updateAll: function() {
+    updateAll: async function() {
 
-        console.log("getting tokens to update");
+        var allTokens = await tokenPriceDataService.GetAll();    
 
-        var tokensToUpdate = tokenPriceDataService.GetAll();    
-
-        console.log("got");
         var batchSize = 10; // update 10 tokens at a time
-        var updateBatches = [];
+        var batches = [];
 
-        while (tokensToUpdate.length > 0) {
-            updateBatches.push(tokensToUpdate.splice(0, batchSize));
+        while (allTokens.length > 0) {
+            batches.push(allTokens.splice(0, batchSize));
         }
 
-        console.log(updateBatches);
-
+        updateAllBatches(batches);
     }
 }
 
-function updateTokens(tokens) {
-    console.log("updateTokens");
+async function updateAllBatches(batches) {
+
+    for (var i = 0; i < batches.length; i++) {
+        await updateBatch(batches[i]);
+    }
 }
+
+async function updateBatch(batch) {
+    var tokens = batch;
+    var tokenSymbols = batch.map(x => x.symbol);
+    var prices = await cryptocompare.priceMulti(tokenSymbols, ['USD']);
+
+    for (var symbol in prices) {
+        for (var i = 0; i < tokens.length; i++) {
+            if (tokens[i].symbol == symbol) {
+                tokens[i].priceUsd = prices[symbol].USD;
+            }
+        }
+    }
+
+    for (var i = 0; i < tokens.length; i++) {
+        console.log(`Updating ${tokens[i].symbol} price: $${tokens[i].priceUsd}`);
+        tokenPriceDataService.Update(tokens[i].id, tokens[i].priceUsd);
+    }
+}
+
+
