@@ -1,28 +1,47 @@
 extends layout
 
 block content
-	h1 Address
-	p you are viewing address #{address.address}
-	p eth balance: #{address.ethBalance} ($#{address.ethBalanceUsdEquivalent} USD equivalent)
+    h1 Address
+    p you are viewing address #{address.address}
+    p eth balance: #{address.ethBalance} ($#{address.ethBalanceUsdEquivalent} USD equivalent)
 
-	br
-	div
-		span tokens
-		each item in address.tokens
-			div #{item.amount}x #{item.name}
+    br
+    div
+        span tokens
+        each item in address.tokens
+            div #{item.amount}x #{item.name}
 
-	br
-	div
-		span transctions
-		each transaction in address.recentTransactions
-			div 
-				span hash: 
-				a(href=`/transaction/${transaction.hash}`)
-					= transaction.hash
-				span 
-				a(href=`/address/${transaction.from}`)
-					= transaction.from
-				span  -> 
-				a(href=`/address/${transaction.to}`)
-					= transaction.to
-				span= ` amount: ${transaction.amount}`
+    br
+    h2 transactions
+    table 
+        tr
+            th hash
+            th block
+            th from
+            th to
+            th amount
+            th utctime
+            th fee
+        each transaction in address.transactions
+            tr 
+                td
+                    a(href=`/transaction/${transaction.hash}`)
+                        = transaction.hash.substring(0, 12) + '...'
+                td
+                    a(href=`/block/${transaction.block}`)
+                        = transaction.block
+                td
+                    a(href=`/address/${transaction.fromaddress}`)
+                        = transaction.fromaddress.substring(0, 12) + '...'
+                td
+                    span  -> 
+                td
+                    a(href=`/address/${transaction.toaddress}`)
+                        = transaction.toaddress.substring(0, 12) + '...'
+                td
+                    span=transaction.value
+                td
+                    span=transaction.utctime.toLocaleString()
+                td
+                    span=transaction.fee
+

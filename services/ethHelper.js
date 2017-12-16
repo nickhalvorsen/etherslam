@@ -1,11 +1,13 @@
 var Web3 = require('web3');
 var web3 = new Web3(Web3.givenProvider || "http://127.0.0.1:18545");
-
+var transactionDataService = require('./transactionDataService');
 
 module.exports = {
-    getAddressData: async function (address) {
+    getAddressData: async function(address) {
         
         var balance = await web3.eth.getBalance(address);
+
+        var transactions = await transactionDataService.getTransactions(address);
 
         return {
 		address: address
@@ -16,10 +18,7 @@ module.exports = {
 			{name: "token1", amount: 222}
 			, {name: "token2", amount: 444}
 		]
-		, recentTransactions: [
-			{ hash: "0x234234", from: "0x111ss2", to: "0x434991", amount: "349"}
-			, { hash: "0x4848d", from: "0x111ss2", to: "0xdsrds", amount: "64"}
-		]
+		, transactions: transactions
 	};
   },
   getTransactionData: function (transaction) {
