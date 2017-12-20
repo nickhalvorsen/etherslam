@@ -10,7 +10,7 @@ module.exports = {
 
         var transactions = await transactionDataService.getTransactions(address);
 
-        var ethUsdPrice = await tokenPriceDataService.GetPrice("ETH");
+        var ethUsdPrice = await tokenPriceDataService.getPrice("ETH");
 
         return {
 		address: address

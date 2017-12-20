@@ -5,7 +5,7 @@ const tokenPriceDataService = require('./tokenPriceDataService');
 module.exports = {
     updateAll: async function() {
 
-        var allTokens = await tokenPriceDataService.GetAll();    
+        var allTokens = await tokenPriceDataService.getAll();    
 
         var batchSize = 10; // update 10 tokens at a time
         var batches = [];
@@ -40,7 +40,7 @@ async function updateBatch(batch) {
 
     for (var i = 0; i < tokens.length; i++) {
         console.log(`Updating ${tokens[i].symbol} price: $${tokens[i].priceUsd}`);
-        tokenPriceDataService.Update(tokens[i].id, tokens[i].priceUsd);
+        tokenPriceDataService.update(tokens[i].id, tokens[i].priceUsd);
     }
 }
 

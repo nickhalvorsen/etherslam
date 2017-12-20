@@ -9,6 +9,8 @@ var index = require('./routes/index');
 var task = require('./routes/task');
 var address = require('./routes/address');
 var transaction = require('./routes/transaction');
+var block = require('./routes/block');
+var token = require('./routes/token');
 
 var app = express();
 
@@ -28,6 +30,8 @@ app.use('/', index);
 app.use('/task', task);
 app.use('/address', address);
 app.use('/transaction', transaction);
+app.use('/block', block);
+app.use('/token', token);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
