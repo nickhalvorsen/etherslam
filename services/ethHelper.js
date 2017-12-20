@@ -1,6 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3(Web3.givenProvider || "http://127.0.0.1:18545");
 var transactionDataService = require('./transactionDataService');
+var tokenPriceDataService = require('./tokenPriceDataService');
 
 module.exports = {
     getAddressData: async function(address) {
@@ -9,11 +10,12 @@ module.exports = {
 
         var transactions = await transactionDataService.getTransactions(address);
 
+        var ethUsdPrice = await tokenPriceDataService.GetPrice("ETH");
+
         return {
 		address: address
 		, ethBalance: balance
-		, ethBalanceUsdEquivalent: 999
-		, ethUsdPrice: 999
+		, ethUsdPrice: ethUsdPrice
 		, tokens: [
 			{name: "token1", amount: 222}
 			, {name: "token2", amount: 444}

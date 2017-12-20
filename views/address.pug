@@ -1,9 +1,10 @@
 extends layout
 
 block content
+    include etherFormatting
     h1 Address
     p you are viewing address #{address.address}
-    p eth balance: #{address.ethBalance} ($#{address.ethBalanceUsdEquivalent} USD equivalent)
+    p eth balance: #{weiToEther(address.ethBalance)} ($#{weiToEther(address.ethBalance) * address.ethUsdPrice} USD equivalent, 1 ETH = $#{address.ethUsdPrice})
 
     br
     div
@@ -18,6 +19,7 @@ block content
             th hash
             th block
             th from
+            th
             th to
             th amount
             th utctime
@@ -39,9 +41,9 @@ block content
                     a(href=`/address/${transaction.toaddress}`)
                         = transaction.toaddress.substring(0, 12) + '...'
                 td
-                    span=transaction.value
+                    span=weiToEther(transaction.value)
                 td
                     span=transaction.utctime.toLocaleString()
                 td
-                    span=transaction.fee
+                    //span=weiToEther(transaction.fee)
 
