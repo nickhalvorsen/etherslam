@@ -23,15 +23,39 @@ module.exports = {
 		, transactions: transactions
 	};
   },
-  getTransactionData: function (transaction) {
+  getTransactionData: async function (transaction) {
+
+    var data = await transactionDataService.getTransaction(transaction);
+
     return {
-		hash: transaction
-		, status: 'success'
-		, block: '414232'
-		, testTimeStamp: '04:30 44/33/22'
-		, fromAddress: '0x320478962039486723423435566'
-		, toAddress: '0x039987098d70987394872395873'
-		, amount: '30.44'
+		hash: data.hash
+		, status: ''
+		, block: data.block
+		, utcTime: data.utctime
+		, fromAddress: data.fromaddress
+		, toAddress: data.toaddress
+		, amount: data.value
+        , fee: data.fee
 	}
+  },
+  getBlockData: async function (block) {
+      var data = await web3.eth.getBlock(block);
+
+      return {
+          blockNumber: data.number
+          , utctime: data.timestamp
+          , difficulty: data.difficulty
+          , extraData: data.extraData
+          , gasLimit: data.gasLimit
+          , gasUsed: data.gasUsed
+          , hash: data.hash
+          , miner: data.miner
+          , nonce: data.nonce
+          , parentHash: data.parentHash
+          , sha3Uncles: data.sha3Uncles
+          , size: data.size
+          , totalDifficulty: data.totalDifficulty
+          , transactionCount: data.transactions.length
+      }
   }
 };
