@@ -2,7 +2,8 @@ header
   div(class="header-item")
       a(href="/") etherslam
   div(class="header-item")
-      input(placeholder="search")
+      form(action="/search")
+          input(name="s" placeholder="search")
   div(class="header-item")
     a(href="/address/0x8F7147Aaa34d9ae583A7Aa803e8df9bd6B4CC185") test address
     span /

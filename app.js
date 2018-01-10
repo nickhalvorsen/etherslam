@@ -11,6 +11,7 @@ var address = require('./routes/address');
 var transaction = require('./routes/transaction');
 var block = require('./routes/block');
 var token = require('./routes/token');
+var search = require('./routes/search');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/search', search);
 app.use('/task', task);
 app.use('/address', address);
 app.use('/transaction', transaction);
