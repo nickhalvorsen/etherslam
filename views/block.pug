@@ -10,7 +10,8 @@ block content
     div Parent hash: #{block.parentHash}
     div Sha3 uncles: #{block.sha3Uncles}
     div Size: #{block.size}
-    div Transaction count: #{block.transactionCount} transactions
+    div Transaction count: 
+        a(href=`/blockTransactions/${block.blockNumber}`) #{block.transactionCount} transactions
     div Difficulty: #{block.difficulty}
     div Total difficulty: #{block.totalDifficulty}
     div Gas limit: #{block.gasLimit}

@@ -10,6 +10,7 @@ var task = require('./routes/task');
 var address = require('./routes/address');
 var transaction = require('./routes/transaction');
 var block = require('./routes/block');
+var blockTransactions = require('./routes/blockTransactions');
 var token = require('./routes/token');
 var search = require('./routes/search');
 
@@ -33,6 +34,7 @@ app.use('/task', task);
 app.use('/address', address);
 app.use('/transaction', transaction);
 app.use('/block', block);
+app.use('/blockTransactions', blockTransactions);
 app.use('/token', token);
 
 // catch 404 and forward to error handler

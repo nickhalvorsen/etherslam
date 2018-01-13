@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    include etherFormatting
+    h1 Block
+    p you are viewing transactions from block 
+        a(href=`/block/${block}`) #{block}
+
+    table
+        tr
+            th hash
+            th from
+            th
+            th to
+            th amount
+            th fee
+
+        each transaction in transactions
+            tr 
+                td
+                    a(href=`/transaction/${transaction.hash}`)
+                        = transaction.hash.substring(0, 12) + '...'
+                td
+                    a(href=`/address/${transaction.from}`)
+                        = transaction.from.substring(0, 12) + '...'
+                td
+                    span  -> 
+                if !transaction.to
+                    td
+                        a(href=`/address/${transaction.to}`) Contract creation
+                else
+                    td
+                        a(href=`/address/${transaction.to}`)
+                            = transaction.to.substring(0, 12) + '...'
+                td
+                    span=weiToEther(transaction.value)
+                td
+                    //span=weiToEther(transaction.fee)
+

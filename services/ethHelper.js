@@ -57,5 +57,10 @@ module.exports = {
           , totalDifficulty: data.totalDifficulty
           , transactionCount: data.transactions.length
       }
+  },
+  getBlockTransactionData: async function(block) {
+      var data = await web3.eth.getBlock(block, true);
+
+      return data.transactions
   }
 };
