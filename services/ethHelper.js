@@ -21,6 +21,7 @@ module.exports = {
 			, {name: "token2", amount: 444}
 		]
 		, transactions: transactions
+        , isContract: isContract(address)
 	};
   },
   getTransactionData: async function (transaction) {
@@ -62,5 +63,14 @@ module.exports = {
       var data = await web3.eth.getBlock(block, true);
 
       return data.transactions
+  },
+  addressIsContract: async function(address) {
+      return isContract(address);
   }
 };
+
+async function isContract(address) {
+    var code = await web3.eth.getCode(address);
+
+    return code.length > 2;
+}

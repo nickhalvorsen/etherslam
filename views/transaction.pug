@@ -12,9 +12,12 @@ block content
     div From: 
         a(href=`/address/${transaction.fromAddress}`)
             = transaction.fromAddress
-    div To: 
-        a(href=`/address/${transaction.toAddress}`)
-            = transaction.toAddress
+    if transaction.toAddress == 'null'
+        td To: Contract creation
+    else
+        div To: 
+            a(href=`/address/${transaction.toAddress}`)
+                = transaction.toAddress
     div Amount: #{weiToEther(transaction.amount)} ETH
     div Fee: #{transaction.fee}
 
