@@ -2,18 +2,22 @@ extends layout
 
 block content
     h1 Block
-    p you are viewing block #{block.blockNumber}
 
-    div Block number: #{block.blockNumber}
-    div Time stamp: #{block.utctime}
-    div Hash: #{block.hash}
-    div Parent hash: #{block.parentHash}
-    div Sha3 uncles: #{block.sha3Uncles}
-    div Size: #{block.size}
-    div Transaction count: 
-        a(href=`/blockTransactions/${block.blockNumber}`) #{block.transactionCount} transactions
-    div Difficulty: #{block.difficulty}
-    div Total difficulty: #{block.totalDifficulty}
-    div Gas limit: #{block.gasLimit}
-    div Gas used: #{block.gasUsed}
-    div Extra data: #{block.extraData}
+    if block == null
+        p block not found.
+    else 
+        p you are viewing block #{block.blockNumber}
+
+        div Block number: #{block.blockNumber}
+        div Time stamp: #{block.utctime}
+        div Hash: #{block.hash}
+        div Parent hash: #{block.parentHash}
+        div Sha3 uncles: #{block.sha3Uncles}
+        div Size: #{block.size}
+        div Transaction count: 
+            a(href=`/blockTransactions/${block.blockNumber}`) #{block.transactionCount} transactions
+        div Difficulty: #{block.difficulty}
+        div Total difficulty: #{block.totalDifficulty}
+        div Gas limit: #{block.gasLimit}
+        div Gas used: #{block.gasUsed}
+        div Extra data: #{block.extraData}

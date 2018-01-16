@@ -2,38 +2,42 @@ extends layout
 
 block content
     include etherFormatting
-    h1 Block
-    p you are viewing transactions from block 
-        a(href=`/block/${block}`) #{block}
+    if transactions == null
+        p block not found
+    else
+        h1 Block
+        span you are viewing transactions from block 
+            a(href=`/block/${block}`) #{block}
+        span  (#{transactions.length} transactions)
 
-    table
-        tr
-            th hash
-            th from
-            th
-            th to
-            th amount
-            th fee
+        table
+            tr
+                th hash
+                th from
+                th
+                th to
+                th amount
+                th fee
 
-        each transaction in transactions
-            tr 
-                td
-                    a(href=`/transaction/${transaction.hash}`)
-                        = transaction.hash.substring(0, 12) + '...'
-                td
-                    a(href=`/address/${transaction.from}`)
-                        = transaction.from.substring(0, 12) + '...'
-                td
-                    span  -> 
-                if !transaction.to
+            each transaction in transactions
+                tr 
                     td
-                        Contract creation
-                else
+                        a(href=`/transaction/${transaction.hash}`)
+                            = transaction.hash.substring(0, 12) + '...'
                     td
-                        a(href=`/address/${transaction.to}`)
-                            = transaction.to.substring(0, 12) + '...'
-                td
-                    span=weiToEther(transaction.value)
-                td
-                    //span=weiToEther(transaction.fee)
+                        a(href=`/address/${transaction.from}`)
+                            = transaction.from.substring(0, 12) + '...'
+                    td
+                        span  -> 
+                    if !transaction.to
+                        td
+                            Contract creation
+                    else
+                        td
+                            a(href=`/address/${transaction.to}`)
+                                = transaction.to.substring(0, 12) + '...'
+                    td
+                        span=weiToEther(transaction.value)
+                    td
+                        //span=weiToEther(transaction.fee)
 

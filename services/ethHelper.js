@@ -28,6 +28,10 @@ module.exports = {
 
     var data = await transactionDataService.getTransaction(transaction);
 
+      if (data == null) {
+        return null;
+      }
+
     return {
 		hash: data.hash
 		, status: ''
@@ -41,6 +45,10 @@ module.exports = {
   },
   getBlockData: async function (block) {
       var data = await web3.eth.getBlock(block);
+
+      if (data == null) {
+        return null;
+      }
 
       return {
           blockNumber: data.number
@@ -61,6 +69,10 @@ module.exports = {
   },
   getBlockTransactionData: async function(block) {
       var data = await web3.eth.getBlock(block, true);
+
+      if (data == null) {
+        return null;
+      }
 
       return data.transactions
   },

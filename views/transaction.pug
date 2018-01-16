@@ -3,21 +3,24 @@ extends layout
 block content
     include etherFormatting
     h1 Transaction
-    p you are viewing transaction #{transaction.hash}
-	
-    div Hash: #{transaction.hash}
-    div Status: #{transaction.status}
-    div Block: #{transaction.block}
-    div Time stamp: #{transaction.utctime}
-    div From: 
-        a(href=`/address/${transaction.fromAddress}`)
-            = transaction.fromAddress
-    if transaction.toAddress == 'null'
-        td To: Contract creation
+    if transaction == null
+        p unable to get transaction
     else
-        div To: 
-            a(href=`/address/${transaction.toAddress}`)
-                = transaction.toAddress
-    div Amount: #{weiToEther(transaction.amount)} ETH
-    div Fee: #{transaction.fee}
+        p you are viewing transaction #{transaction.hash}
+        
+        div Hash: #{transaction.hash}
+        div Status: #{transaction.status}
+        div Block: #{transaction.block}
+        div Time stamp: #{transaction.utctime}
+        div From: 
+            a(href=`/address/${transaction.fromAddress}`)
+                = transaction.fromAddress
+        if transaction.toAddress == 'null'
+            td To: Contract creation
+        else
+            div To: 
+                a(href=`/address/${transaction.toAddress}`)
+                    = transaction.toAddress
+        div Amount: #{weiToEther(transaction.amount)} ETH
+        div Fee: #{transaction.fee}
 

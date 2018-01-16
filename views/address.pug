@@ -1,51 +1,54 @@
 extends layout
 
 block content
-    include etherFormatting
-    h1 Address
-    p you are viewing address #{address.address}
-        if address.isContract
-            span  (contract address)
-    p eth balance: #{weiToEther(address.ethBalance)} ($#{weiToEther(address.ethBalance) * address.ethUsdPrice} USD equivalent, 1 ETH = $#{address.ethUsdPrice})
+    if address == null
+        p could not find given address
+    else
+        include etherFormatting
+        h1 Address
+        p you are viewing address #{address.address}
+            if address.isContract
+                span  (contract address)
+        p eth balance: #{weiToEther(address.ethBalance)} ($#{weiToEther(address.ethBalance) * address.ethUsdPrice} USD equivalent, 1 ETH = $#{address.ethUsdPrice})
 
-    br
-    div
-        span tokens
-        each item in address.tokens
-            div #{item.amount}x #{item.name}
+        br
+        div
+            span tokens
+            each item in address.tokens
+                div #{item.amount}x #{item.name}
 
-    br
-    h2 transactions
-    table 
-        tr
-            th hash
-            th block
-            th from
-            th
-            th to
-            th amount
-            th utctime
-            th fee
-        each transaction in address.transactions
-            tr 
-                td
-                    a(href=`/transaction/${transaction.hash}`)
-                        = transaction.hash.substring(0, 12) + '...'
-                td
-                    a(href=`/block/${transaction.block}`)
-                        = transaction.block
-                td
-                    a(href=`/address/${transaction.fromaddress}`)
-                        = transaction.fromaddress.substring(0, 12) + '...'
-                td
-                    span  -> 
-                td
-                    a(href=`/address/${transaction.toaddress}`)
-                        = transaction.toaddress.substring(0, 12) + '...'
-                td
-                    span=weiToEther(transaction.value)
-                td
-                    span=transaction.utctime.toLocaleString()
-                td
-                    //span=weiToEther(transaction.fee)
+        br
+        h2 transactions
+        table 
+            tr
+                th hash
+                th block
+                th from
+                th
+                th to
+                th amount
+                th utctime
+                th fee
+            each transaction in address.transactions
+                tr 
+                    td
+                        a(href=`/transaction/${transaction.hash}`)
+                            = transaction.hash.substring(0, 12) + '...'
+                    td
+                        a(href=`/block/${transaction.block}`)
+                            = transaction.block
+                    td
+                        a(href=`/address/${transaction.fromaddress}`)
+                            = transaction.fromaddress.substring(0, 12) + '...'
+                    td
+                        span  -> 
+                    td
+                        a(href=`/address/${transaction.toaddress}`)
+                            = transaction.toaddress.substring(0, 12) + '...'
+                    td
+                        span=weiToEther(transaction.value)
+                    td
+                        span=transaction.utctime.toLocaleString()
+                    td
+                        //span=weiToEther(transaction.fee)
 
