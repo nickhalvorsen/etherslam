@@ -13,14 +13,17 @@ function handleSearch(req, res, next) {
 
     if (searchHelper.looksLikeAddress(searchQuery)) {
         res.redirect('/address/' + searchQuery);
+        return;
     }
 
     if (searchHelper.looksLikeTransactionHash(searchQuery)) {
         res.redirect('/transaction/' + searchQuery);
+        return;
     }
 
     if (searchHelper.looksLikeBlockNumber(searchQuery)) {
         res.redirect('/block/' + searchQuery);
+        return;
     }
 
     return searchController.index(req, res, next);
