@@ -5,7 +5,9 @@ var tokenPriceDataService = require('./tokenPriceDataService');
 
 module.exports = {
     getAddressData: async function(address) {
-        
+
+        address = address.toLowerCase();
+
         var balance = await web3.eth.getBalance(address);
 
         var transactions = await transactionDataService.getTransactions(address);
@@ -25,6 +27,8 @@ module.exports = {
 	};
   },
   getTransactionData: async function (transaction) {
+
+      transaction = transaction.toLowerCase();
 
     var data = await transactionDataService.getTransaction(transaction);
 
