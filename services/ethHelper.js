@@ -23,7 +23,7 @@ module.exports = {
 			, {name: "token2", amount: 444}
 		]
 		, transactions: transactions
-        , isContract: isContract(address)
+        , isContract: await isContract(address)
 	};
   },
   getTransactionData: async function (transaction) {
