@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 Token
+    p prices last updated on #{ tokens[0].dateupdated }
+    table
+        tr
+            th token
+            th price
+        each token in tokens
+            tr
+                td 
+                    a(href=`/token/${token.symbol}`) #{token.name} (#{token.symbol})
+                td #{token.priceusd}
+
+
