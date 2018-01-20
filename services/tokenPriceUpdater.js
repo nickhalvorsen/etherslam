@@ -1,11 +1,11 @@
 global.fetch = require('node-fetch');
 const cryptocompare = require('cryptocompare');
-const tokenPriceDataService = require('./tokenPriceDataService');
+const tokenDataService = require('./tokenDataService');
 
 module.exports = {
     updateAll: async function() {
 
-        var allTokens = await tokenPriceDataService.getAll();    
+        var allTokens = await tokenDataService.getAll();    
 
         var batchSize = 10; // update 10 tokens at a time
         var batches = [];
@@ -40,7 +40,7 @@ async function updateBatch(batch) {
 
     for (var i = 0; i < tokens.length; i++) {
         console.log(`Updating ${tokens[i].symbol} price: $${tokens[i].priceUsd}`);
-        tokenPriceDataService.update(tokens[i].id, tokens[i].priceUsd);
+        tokenDataService.update(tokens[i].id, tokens[i].priceUsd);
     }
 }
 

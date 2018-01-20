@@ -1,7 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3(Web3.givenProvider || process.env.WEB3_HOST);
 var transactionDataService = require('./transactionDataService');
-var tokenPriceDataService = require('./tokenPriceDataService');
+var tokenDataService = require('./tokenDataService');
 
 module.exports = {
     getAddressData: async function(address) {
@@ -12,7 +12,7 @@ module.exports = {
 
         var transactions = await transactionDataService.getTransactions(address);
 
-        var ethUsdPrice = await tokenPriceDataService.getPrice("ETH");
+        var ethUsdPrice = await tokenDataService.getPrice("ETH");
 
         return {
 		address: address

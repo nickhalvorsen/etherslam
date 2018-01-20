@@ -1,9 +1,8 @@
 var ethHelper = require('../services/ethHelper');
-var tokenDataService = require('../services/tokenPriceDataService.js');
+var tokenDataService = require('../services/tokenDataService.js');
 
 exports.details = async function(req, res) {
     var tokenData = await tokenDataService.getTokenData(req.params.token);
-    console.log(tokenData);
     res.render('token', { token: tokenData });
 };
 
