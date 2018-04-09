@@ -1,8 +1,5 @@
 extends layout
 
 block content
-    h1 Tokens
-    p you are looking at details for token #{token.symbol}
-    p #{token.name}
-    p #{token.symbol}
+    h1 #{token.name} token (#{token.symbol})
     p $#{token.priceusd} (last updated on #{token.dateupdated})

@@ -1,4 +1,5 @@
 var express = require('express');
+var favicon = require('serve-favicon');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -14,15 +15,13 @@ var block = require('./routes/block');
 var blockTransactions = require('./routes/blockTransactions');
 var token = require('./routes/token');
 var search = require('./routes/search');
-
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

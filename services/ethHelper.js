@@ -30,7 +30,7 @@ module.exports = {
 
       transaction = transaction.toLowerCase();
 
-    var data = await transactionDataService.getTransaction(transaction);
+      var data = await transactionDataService.getTransaction(transaction);
 
       if (data == null) {
         return null;
@@ -56,7 +56,7 @@ module.exports = {
 
       return {
           blockNumber: data.number
-          , utctime: data.timestamp
+          , localTime: new Date(data.timestamp*1000)
           , difficulty: data.difficulty
           , extraData: data.extraData
           , gasLimit: data.gasLimit

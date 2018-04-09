@@ -6,17 +6,18 @@ body {
 
 .content {
     padding:2.3em;
+    color:#333;
 }
 
 a {
     color: #00B7FF;
 }
 
-
-
 header {
     color:#EEE;
     background: #3579A3;    
+    padding-top:.3em;
+    padding-bottom:.3em;
 }
 
 .header-item {
@@ -25,6 +26,27 @@ header {
     padding-right:1em;
 }
 
+.header-site-name a {
+    font-size:1.1em;
+    font-weight:bold;
+    letter-spacing:.08em;
+}
+
+.header-item a {
+    text-decoration:none;
+}
+
+.header-item a:hover {
+    text-decoration:underline;
+}
+
 header a {
     color:#FAFAFA;
+}
+
+.address-header-address {
+    font-size:.6em;
+    font-weight:normal;
+    color:#888;
+
 }

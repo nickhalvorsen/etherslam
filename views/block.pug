@@ -1,23 +1,43 @@
 extends layout
 
 block content
-    h1 Block
+    h1 Block #{block.blockNumber}
 
     if block == null
         p block not found.
     else 
-        p you are viewing block #{block.blockNumber}
-
-        div Block number: #{block.blockNumber}
-        div Time stamp: #{block.utctime}
-        div Hash: #{block.hash}
-        div Parent hash: #{block.parentHash}
-        div Sha3 uncles: #{block.sha3Uncles}
-        div Size: #{block.size}
-        div Transaction count: 
-            a(href=`/blockTransactions/${block.blockNumber}`) #{block.transactionCount} transactions
-        div Difficulty: #{block.difficulty}
-        div Total difficulty: #{block.totalDifficulty}
-        div Gas limit: #{block.gasLimit}
-        div Gas used: #{block.gasUsed}
-        div Extra data: #{block.extraData}
+        table
+            tr
+                td Time (UTC)
+                td #{block.localTime.toUTCString()}
+            tr 
+                td Hash
+                td #{block.hash}
+            tr
+                td Parent hash
+                td #{block.parentHash}
+            tr 
+                td Sha3 uncles 
+                td #{block.sha3Uncles}
+            tr 
+                td Size 
+                td #{block.size}
+            tr 
+                td Transaction count&nbsp;
+                td 
+                    a(href=`/blockTransactions/${block.blockNumber}`) #{block.transactionCount} transactions
+            tr 
+                td Difficulty 
+                td #{block.difficulty}
+            tr 
+                td Total difficulty 
+                td #{block.totalDifficulty}
+            tr 
+                td Gas limit 
+                td #{block.gasLimit}
+            tr 
+                td Gas used 
+                td #{block.gasUsed}
+            tr 
+                td Extra data 
+                td #{block.extraData}

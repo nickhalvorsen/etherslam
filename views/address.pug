@@ -5,11 +5,11 @@ block content
         p could not find given address
     else
         include etherFormatting
-        h1 Address
-        p you are viewing address #{address.address}
+        h1(class='address-header') Address&nbsp;&nbsp;
+            span(class='address-header-address') #{address.address}
             if address.isContract
                 span  (contract address)
-        p eth balance: #{weiToEther(address.ethBalance)} ($#{weiToEther(address.ethBalance) * address.ethUsdPrice} USD equivalent, 1 ETH = $#{address.ethUsdPrice})
+        p ETH balance: #{weiToEther(address.ethBalance)} ($#{(weiToEther(address.ethBalance) * address.ethUsdPrice).toFixed(2)} USD equivalent, 1 ETH = $#{address.ethUsdPrice})
 
         br
         div
@@ -27,7 +27,7 @@ block content
                 th
                 th to
                 th amount
-                th utctime
+                th time (utc)
                 th fee
             each transaction in address.transactions
                 tr 

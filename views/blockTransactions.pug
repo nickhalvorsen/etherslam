@@ -5,8 +5,7 @@ block content
     if transactions == null
         p block not found
     else
-        h1 Block
-        span you are viewing transactions from block 
+        h1 Transactions for block 
             a(href=`/block/${block}`) #{block}
         span  (#{transactions.length} transactions)
 
