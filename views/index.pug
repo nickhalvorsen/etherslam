@@ -1,4 +1,14 @@
 extends layout
 
 block content
-    div welcome to Etherslam
+    include etherFormatting
+    div 
+        latest synced block: #{recentBlocks[0].blockNumber}
+    div
+        each block in recentBlocks
+            div(class='recent-block')
+                a(href=`/block/${block.blockNumber}`)
+                    = block.blockNumber
+                span &nbsp;
+                a(href=`/blockTransactions/${block.blockNumber}`)
+                    = block.transactionCount + ' transactions'

@@ -2,6 +2,7 @@ var Web3 = require('web3');
 var web3 = new Web3(Web3.givenProvider || process.env.WEB3_HOST);
 var transactionDataService = require('./transactionDataService');
 var tokenDataService = require('./tokenDataService');
+var moment = require('moment');
 
 module.exports = {
     getAddressData: async function(address) {
@@ -12,6 +13,7 @@ module.exports = {
 
         var transactions = await transactionDataService.getTransactions(address);
 
+        var transactionCount = await transactionDataService.getTransactionCount(address);
         var ethUsdPrice = await tokenDataService.getPrice("ETH");
 
         return {
@@ -23,6 +25,7 @@ module.exports = {
 			, {name: "token2", amount: 444}
 		]
 		, transactions: transactions
+        , transactionCount: transactionCount 
         , isContract: await isContract(address)
 	};
   },
@@ -57,6 +60,7 @@ module.exports = {
       return {
           blockNumber: data.number
           , localTime: new Date(data.timestamp*1000)
+          , timeAgo: moment(new Date(data.timestamp*1000)).fromNow()
           , difficulty: data.difficulty
           , extraData: data.extraData
           , gasLimit: data.gasLimit
@@ -82,6 +86,20 @@ module.exports = {
   },
   addressIsContract: async function(address) {
       return isContract(address);
+  },
+  getLatestBlock: async function() {
+      var latestBlock = await web3.eth.getBlockNumber();
+      return latestBlock;
+  },
+  getRecentBlocks: async function(count) {
+      var latestBlock = await web3.eth.getBlockNumber();
+      var blockData = [];
+      for (var i = latestBlock; i >= latestBlock - count; i--)
+      {
+          var thisData = await this.getBlockData(i);
+          blockData.push(thisData);
+      }
+      return blockData;
   }
 };
 
