@@ -11,6 +11,11 @@ body {
 
 a {
     color: #00B7FF;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
 }
 
 header {
@@ -48,5 +53,19 @@ header a {
     font-size:.6em;
     font-weight:normal;
     color:#888;
+}
 
+.recent-blocks {
+    display:inline-block;
+    width:20em;
+}
+
+.recent-blocks-header {
+    border-bottom: 1px solid #333;
+}
+
+.recent-block {
+    margin: .75em;
+    border: 1px solid #333;
+    padding: .75em;
 }

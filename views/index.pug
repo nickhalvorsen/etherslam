@@ -2,13 +2,19 @@ extends layout
 
 block content
     include etherFormatting
-    div 
-        latest synced block: #{recentBlocks[0].blockNumber}
-    div
+    div(class='recent-blocks') 
+        div(class='recent-blocks-header') Recent blocks
         each block in recentBlocks
             div(class='recent-block')
-                a(href=`/block/${block.blockNumber}`)
-                    = block.blockNumber
-                span &nbsp;
-                a(href=`/blockTransactions/${block.blockNumber}`)
-                    = block.transactionCount + ' transactions'
+                div
+                    a(href=`/block/${block.blockNumber}`)
+                        = block.blockNumber
+                div
+                    a(href=`/blockTransactions/${block.blockNumber}`)
+                        = block.transactionCount + ' transactions '
+                div
+                    span= block.timeAgo
+                div 
+                    span mined in #{block.timeToMine / 1000}s by 
+                        a(href=`/address/${block.miner}`)
+                            = block.miner.substring(0, 12) + '...'

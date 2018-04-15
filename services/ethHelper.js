@@ -99,6 +99,11 @@ module.exports = {
           var thisData = await this.getBlockData(i);
           blockData.push(thisData);
       }
+      for (var i = 0; i < blockData.length - 1; i++)
+      {
+          blockData[i].timeToMine = blockData[i].localTime - blockData[i+1].localTime;
+      }
+      blockData.pop();
       return blockData;
   }
 };
