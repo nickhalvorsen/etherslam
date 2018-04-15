@@ -12,14 +12,11 @@ block content
         p ETH balance: #{weiToEther(address.ethBalance)} ($#{(weiToEther(address.ethBalance) * address.ethUsdPrice).toFixed(2)} USD equivalent, 1 ETH = $#{address.ethUsdPrice})
 
         br
-        div
-            span tokens
-            each item in address.tokens
-                div #{item.amount}x #{item.name}
-
-        br
-        h2 transactions
-        table 
+        h2 Transactions
+        span #{address.transactionCount} transactions total
+        if address.transactionCount > address.transactionPageSize
+            span , showing page #{address.transactionPage} of #{Math.ceil(address.transactionCount / address.transactionPageSize)}
+        table(class='transactions')
             tr
                 th hash
                 th block

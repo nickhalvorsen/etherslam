@@ -5,14 +5,15 @@ var tokenDataService = require('./tokenDataService');
 var moment = require('moment');
 
 module.exports = {
-    getAddressData: async function(address) {
+    getAddressData: async function(address, page, pageSize) {
 
         address = address.toLowerCase();
 
         var balance = await web3.eth.getBalance(address);
 
-        var transactions = await transactionDataService.getTransactions(address);
+        var txOffset = (page-1) * pageSize;
 
+        var transactions = await transactionDataService.getTransactions(address, txOffset, pageSize);
         var transactionCount = await transactionDataService.getTransactionCount(address);
         var ethUsdPrice = await tokenDataService.getPrice("ETH");
 
@@ -27,6 +28,8 @@ module.exports = {
 		, transactions: transactions
         , transactionCount: transactionCount 
         , isContract: await isContract(address)
+        , transactionPage: page
+        , transactionPageSize: pageSize
 	};
   },
   getTransactionData: async function (transaction) {

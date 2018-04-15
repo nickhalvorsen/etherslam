@@ -69,3 +69,8 @@ header a {
     border: 1px solid #333;
     padding: .75em;
 }
+
+table.transactions td {
+    padding-left:.2em;
+    padding-right:.2em;
+}
